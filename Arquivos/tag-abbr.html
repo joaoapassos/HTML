@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag abbr - Abreviações</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Verdana, sans-serif;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    abbr{
+        text-decoration: none;
+        color: aqua;
+    }
+    abbr:hover{
+        color: brown;
+        text-decoration:underline;
+    }
+    a{
+        color: black;
+        font-weight: 800;
+        text-decoration: none;
+    }
+    a:hover{
+        color: brown;
+    }
+</style>
+<body>
+    <h1>Tag abbr - Abreviações</h1>
+
+    <p>Texto exemplo: Curso de HTML Completo e Proficional do CFBC</p>
+    <p>Texto exemplo modificado: Curso de <abbr title="Hypertext Markup Language">HTML</abbr> Completo e Proficional do <abbr title="CFB Cursos">CFBC</abbr></p>
+
+    <p>Texto exemplo 2: <a href="#"><abbr title="Exemplo é um exemplo que se pode usar abbr dentro de links tbm">Exemplo</abbr></a></p>
+    <!-- As propriedades do abbr são que ele é Display: inlene, Categoria: fluxo e fraseado, 
+        Contido por: Fraseado, Filhos: Fraseado, Atributos = title e globais -->
+    <p><a href="../index.html">Voltar para o <abbr title="a pagina home de links dos arquivos HTML">index</abbr></a></p>
+</body>
+</html>
